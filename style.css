@@ -9,9 +9,9 @@ body {
 }
 
 .container {
+  /* border: black 1px solid; */
   width: 90%;
   max-width: 1536px;
-  /* border: black 1px solid; */
   margin-inline: auto;
   position: relative;
   height: 60px;
@@ -30,7 +30,9 @@ body {
   width: 120px;
   height: 60px;
   position: absolute;
-  left: 100%;
+  /* with the LEFT set to 100% the infinite scroll becomes unresponsive on smaller devices */
+  /* left: 100%; */
+  left: max(calc(120px * 8), 100%);
   animation: scroll-Left 30s linear infinite;
 }
 
