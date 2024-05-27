@@ -1,0 +1,14 @@
+.box {
+    background-color: red;
+    border-radius: 0.3em;
+    height: 4em;
+    width: 7em;
+    position: absolute;
+}
+
+main {
+    width: 60em;
+    height: auto;
+    border: black 1px solid;
+    margin-inline: auto;
+}
