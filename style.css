@@ -1,6 +1,12 @@
+@font-face {
+  font-family: WorkSans;
+  src: url(./font/WorkSans-VariableFont_wght.ttf);
+}
+
 *,
 *::before,
 *::after {
+  font-family: WorkSans;
   box-sizing: border-box
 }
 
@@ -25,7 +31,7 @@ body {
 }
 
 .box {
-  background-color: rgb(255, 0, 76);
+  background-color: rgba(255, 0, 76, 0.87);
   border-radius: 6px;
   width: 120px;
   height: 60px;
@@ -34,6 +40,27 @@ body {
   /* left: 100%; */
   left: max(calc(120px * 8), 100%);
   animation: scroll-Left 30s linear infinite;
+}
+
+.wrapper {
+  /* border: 1px solid rgb(255, 0, 76); */
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.title {
+  color: rgb(255, 0, 76);
+  font-size: 2.5em;
+}
+
+.description {
+  color: slategray;
+}
+
+a {
+  color: rgb(255, 0, 76);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .box1 {
