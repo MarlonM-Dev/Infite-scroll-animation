@@ -1,14 +1,73 @@
-.box {
-    background-color: red;
-    border-radius: 0.3em;
-    height: 4em;
-    width: 7em;
-    position: absolute;
+*,
+*::before,
+*::after {
+  box-sizing: border-box
 }
 
-main {
-    width: 60em;
-    height: auto;
-    border: black 1px solid;
-    margin-inline: auto;
+body {
+  background-color: rgb(12, 7, 12);
+}
+
+.container {
+  width: 90%;
+  max-width: 1536px;
+  /* border: black 1px solid; */
+  margin-inline: auto;
+  position: relative;
+  height: 60px;
+  margin-top: 5rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0));
+}
+
+.box {
+  background-color: rgb(255, 0, 76);
+  border-radius: 6px;
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  left: 100%;
+  animation: scroll-Left 30s linear infinite;
+}
+
+.box1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.box2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.box3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.box4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.box5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.box6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.box7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.box8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+@keyframes scroll-Left {
+  to {
+    left: -200px;
+  }
 }
